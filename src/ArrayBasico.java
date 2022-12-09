@@ -7,22 +7,24 @@ public class ArrayBasico {
         int[] miArray = {2,31,5,7,12,89,6,11,0,4};
         int[] nuevaArray = new int[4];
         */
-         /* Dar valores a los campos del array
-miArray[4]++;
-miArrat[2]=22;
-miArray[9]=6*6;
-*/
+
+//Dar valores a los campos del array
+         /* miArray[4]++;
+            miArrat[2]=22;
+            miArray[9]=6*6;
+            */
 
 
-        //imprimir un campo del array
+ //imprimir un campo del array
        // System.out.println(miArray[4]);
        // System.out.println(nuevaArray[1]);
 
-        /* Imprimir todos los campos del Array
-        for (int i=0; i< miArray.length; i++){
+
+ //Imprimir todos los campos del Array
+        /* for (int i=0; i< miArray.length; i++){
         System.out.println(miArray[i]);
         }
-*/
+        */
 
 //char[] profesora = new char[7]; Y luego dar valor a cada uno de los campos o hacer el siguiente:
 
