@@ -125,8 +125,8 @@ public class ArraySegundoAsalto {
 //ESTO ES PARA EL METODO DE BUSCAR UN ARRAY DENTRO DE OTRO ARRAY LLAMADO isArrayOn.
         int[] arrayBuscar = {1,2,3,5,8};
         int[] arrayDondeBuscar = {5,4,3,2,1,634,};
-        System.out.println(isArrayOn(arrayBuscar,arrayDondeBuscar));
-
+        //System.out.println(isArrayOn(arrayBuscar,arrayDondeBuscar));
+        System.out.println(binariSearch(arrayBuscar,5));
 
 
 
@@ -134,7 +134,7 @@ public class ArraySegundoAsalto {
             //main
     }
 
-
+/*
     public static boolean isArrayOn(int[] src, int [] dst) {
         boolean[] arrayCompara=new boolean[src.length];
         int comparador=0;
@@ -159,6 +159,46 @@ public class ArraySegundoAsalto {
         //METODO isArrayOn
     }
 
+*/
+
+    public static int binariSearch(int[] array, int key){
+        /*int low = array[0];
+        int high = array.length-1;
+
+        boolean salida= false;
+
+        while(salida=false){
+            int mid = (low+high)/2;
+            if(array[mid]==key){
+                salida=true;
+            }
+            if(array[mid]<key){
+                high=mid;
+            }
+            if(array[mid]>key){
+                low=mid;
+            }
+        }
+
+        return mid;
+    }*/
+
+        int low=0;
+        int high = array.length-1;
+        int mid;
+
+        while(low <=high){
+            mid = (low + high)/2;
+            if (key > array[mid]){
+            low=mid+1;
+            }else if(key< array[mid]){
+                high = mid -1;
+            }else{
+                return mid;
+            }
+        }
+        return -1;
+        }
 
 
 
