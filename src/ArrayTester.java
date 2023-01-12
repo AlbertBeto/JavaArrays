@@ -34,10 +34,6 @@ imprimirArray(transformado);
     }
 
     // Imprime todas las posiciones de un Array con texto.
-    public static void imprimirArray(int[] aImprimir){
-        for (int i = 0; i < aImprimir.length; i++) {
-            System.out.println("Elemento en posición " + i + " valor " + aImprimir[i]);
-        }
-    }
+    .0
 //class
 }
